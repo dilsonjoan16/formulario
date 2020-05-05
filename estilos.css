@@ -1,0 +1,22 @@
+.caja1{
+    padding: auto;
+    background-color: teal;
+}
+.registro{
+    color: #ffe4b5;
+    text-align: center;
+    background-color: teal;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    
+}
+.body{
+    background-color: teal;
+}
+.texto{
+    color: moccasin;
+}
+.texto1{
+    color: teal;
+}

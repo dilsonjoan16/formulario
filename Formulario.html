@@ -1,0 +1,93 @@
+<<!DOCTYPE html>
+<html>
+<head>
+  <!--INICIO DEL FAVICON-->
+  <link rel="shortcut icon" type="text/css" href="./favicon/favicon.jpg" class="logo">
+  <!--FIN DEL FAVICON-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
+    <script src="main.js"></script>
+</head>
+<body class="body">
+    <form class="form-control" onsubmit="return validar();">
+        <h1 class="Registro">
+          Formulario de Registro
+        </h1>
+        <div class="form-row caja1">
+          <div class="col-md-4 mb-3 texto">
+            <label for="validationServer013">Nombres</label>
+            <input type="text" class="form-control " id="nombre" name="nombre" placeholder="Nombres"
+            maxlength="25" minlength="1"
+              value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 texto">
+            <label for="validationServer023">Apellidos</label>
+            <input type="text" class="form-control " id="apellido" name="apellido" placeholder="Apellidos"
+            maxlength="25" minlength="1"
+              value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 texto">
+            <label for="validationServerUsername33">Correo electronico</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPrepend33">@</span>
+              </div>
+              <input type="email" class="form-control " id="correo" name="correo" placeholder="Correo electronico"
+                aria-describedby="inputGroupPrepend33" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3 texto">
+            <label for="validationServer033"> Numero Telefonico</label>
+            <input type="number" class="form-control " id="telefono" name="telefono" placeholder="Numero de Contacto"
+              maxlength="25" minlength="1" required>
+          </div>
+          <div class="col-md-3 mb-3 texto">
+            <label for="validationServer043">Documento</label>
+            <select name="" class="texto1">
+                <option value="Venezolano">V-</option>
+                <option value="Extranjero">E-</option>
+                <option value="Pasaporte">P-</option>
+                <option value="Rif">Rif J-</option>
+                <option value="Rif">Rif N-</option>
+            </select>
+            <input type="number" class="form-control " id="documento" name="documento" placeholder="DNI" maxlength="25"
+              maxlength="25" minlength="1" required>
+          </div>
+          <div class="col-md-3 mb-3 texto">
+            <label for="validationServer053"></label>
+            <fieldset>
+              <legend>Genero</legend>
+              <p>
+                <input type="radio" name="p1" value="1"> Masculino
+                <input type="radio" name="p1" value="2"> Femenino
+                <input type="radio" name="p1" value="3"> Sin Especificar
+              </p>
+            <div class="invalid-feedback">
+             
+            </div>
+        
+        <button onclick="guardar();" type="submit" class="btn btn-success">Guardar</button>
+        <button onclick="limpiar();" type="reset" class="btn btn-primary">Limpiar</button>
+      </form>
+      <script>
+        alert('Bienvenido a Nuestro formulario, lee y completa los campos!')
+        </script>
+      <script src="validaciones.js"></script>
+</body>
+</html>
